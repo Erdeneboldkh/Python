@@ -1,0 +1,271 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "f679ee14-b523-4996-bdc3-0fb8a180c47f",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#For Loops"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "7a38de3a-2dac-4032-bae4-262cb268931b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n",
+      "2\n",
+      "3\n",
+      "4\n",
+      "5\n"
+     ]
+    }
+   ],
+   "source": [
+    "integers= [1,2,3,4,5]\n",
+    "for number in integers:\n",
+    "    print(number)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "342d4b05-2958-4756-9488-466f97ea44f5",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "yep!\n",
+      "yep!\n",
+      "yep!\n",
+      "yep!\n",
+      "yep!\n"
+     ]
+    }
+   ],
+   "source": [
+    "for number in integers:\n",
+    "    print('yep!')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "a469b235-155f-4076-b943-3dc5a997850b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "2\n",
+      "4\n",
+      "6\n",
+      "8\n",
+      "10\n"
+     ]
+    }
+   ],
+   "source": [
+    "integers= [1,2,3,4,5]\n",
+    "for Jelly in integers:\n",
+    "    print(Jelly+Jelly)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "c7a16d54-c6dd-49e8-8a51-c195df985b18",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "ice_cream_dict = {'name': 'Erdenebold','weekly intake':5,'Favorite ice cream':['MCC','Chocolate']}"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "7712046f-415d-4038-8798-63bf275c77f2",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Erdenebold\n",
+      "5\n",
+      "['MCC', 'Chocolate']\n"
+     ]
+    }
+   ],
+   "source": [
+    "for cream in ice_cream_dict.values():\n",
+    "    print(cream)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "b9b67b29-e86e-462f-8368-d017bd44ece5",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "name -> Erdenebold\n",
+      "weekly intake -> 5\n",
+      "Favorite ice cream -> ['MCC', 'Chocolate']\n"
+     ]
+    }
+   ],
+   "source": [
+    "for key, value in ice_cream_dict.items():\n",
+    "    print(key,'->',value)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "fb5d60b8-81bc-452c-a601-24d77c6fab3e",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "6e255f53-2853-45d4-82fe-b3fbe6983bb3",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#Nested for Loops\n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "id": "00e64a99-5058-43f7-8ad7-55b6c7aa7174",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Vanilla topped with Hot Fudge\n",
+      "Vanilla topped with Oreo\n",
+      "Vanilla topped with Marshmellows\n",
+      "Chocolate topped with Hot Fudge\n",
+      "Chocolate topped with Oreo\n",
+      "Chocolate topped with Marshmellows\n",
+      "Cookie Dough topped with Hot Fudge\n",
+      "Cookie Dough topped with Oreo\n",
+      "Cookie Dough topped with Marshmellows\n"
+     ]
+    }
+   ],
+   "source": [
+    "flavors = ['Vanilla','Chocolate','Cookie Dough']\n",
+    "toppings = ['Hot Fudge','Oreo','Marshmellows']\n",
+    "for one in flavors:\n",
+    "    for two in toppings:\n",
+    "        print(one, 'topped with', two)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "c74c9385-e324-47ad-bbb2-4d0eff2d83e9",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "442cadc3-c00b-4be3-afd2-c679d00efdf6",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "bf89d323-0db8-43ed-8b1c-18d9ce75271e",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "ce6679bc-4eb6-4568-9b01-6f52b5e4c322",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "435967fb-6d48-459a-9eed-004269e407f3",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "ac1d0043-de46-4b6e-b39e-20ca17f23f66",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "4b12f4a9-9dd2-47f7-9344-a8e0ac1ba82c",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "96ed8c89-e40f-49d8-831f-f15a71253ed6",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python [conda env:base] *",
+   "language": "python",
+   "name": "conda-base-py"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.13.5"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
