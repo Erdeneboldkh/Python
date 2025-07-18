@@ -1,0 +1,287 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "b07bd53a-b142-4a89-8b50-622d52859174",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "0\n",
+      "1\n",
+      "2\n",
+      "3\n",
+      "4\n"
+     ]
+    }
+   ],
+   "source": [
+    "number = 0\n",
+    "while number < 5:\n",
+    "    print(number)\n",
+    "    number = number + 1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "5c378791-4253-48cf-8a68-6f65135e53e5",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "0\n",
+      "1\n",
+      "2\n",
+      "3\n"
+     ]
+    }
+   ],
+   "source": [
+    "number = 0\n",
+    "while number < 5:\n",
+    "    print(number)\n",
+    "    if number == 3:\n",
+    "        break\n",
+    "    number = number + 1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "ae55ef7b-b688-4fcf-81b1-0327ef36b12f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "0\n",
+      "1\n",
+      "2\n",
+      "3\n",
+      "4\n",
+      "It no longer < 5\n"
+     ]
+    }
+   ],
+   "source": [
+    "number = 0\n",
+    "while number < 5:\n",
+    "    print(number)\n",
+    "    if number == 6:\n",
+    "        break\n",
+    "    number = number + 1\n",
+    "else:\n",
+    "    print('It no longer < 5')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "e188ae28-d41f-4b97-823f-246acfee4bc1",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n",
+      "2\n",
+      "4\n",
+      "5\n",
+      "It no longer < 5\n"
+     ]
+    }
+   ],
+   "source": [
+    "number = 0\n",
+    "while number < 5:\n",
+    "    number = number + 1\n",
+    "    if number == 3:\n",
+    "        continue\n",
+    "    print(number)\n",
+    "else:\n",
+    "    print('It no longer < 5')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "ffa004be-af23-46a0-8ef9-968fc664660f",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "36daef03-6aa5-48a4-9482-b80632858aba",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "a60766e0-c2f2-48be-a251-a027edbbaa18",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "fcad9f43-9238-48fa-b805-50767d7a91f1",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "52fb11e2-fb70-4564-95d3-e7467821f475",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "73dbe99c-b2b6-4f54-9272-5518a13791cf",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "94a2d14a-9de4-407f-95f5-7681f3e3b860",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "b49fcb50-8444-4ca5-9b7b-2ebd3f5712b0",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "e2d74837-354b-44cd-8d8d-c6be9ca6dc6b",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "3bd08792-cee4-469a-9fd5-5e821b01a75e",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "53a27899-f972-48b3-9d25-6f23e345678b",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "ec2f4218-fe2e-44f5-9019-88552ec13de5",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "eea36643-6652-4d49-aff5-dbf19fc31c9b",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "fc54dff7-1d43-4794-aba5-b86522dc3cba",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "4d34e233-5b36-410d-851e-7799de328e9f",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "4de0f170-5599-40cf-ad3e-80d6a3350157",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "293b3297-5d0c-40dd-bf40-9c4dab6b65d4",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "567b3419-9c92-491d-b6bd-a3e004e4de84",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "8dbce49b-46d0-41ad-8c46-f0ccc11249b9",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python [conda env:base] *",
+   "language": "python",
+   "name": "conda-base-py"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.13.5"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
