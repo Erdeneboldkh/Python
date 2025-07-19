@@ -1,0 +1,302 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "782a429c-e1ec-497d-aafd-a3a063609e3e",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def first_func():\n",
+    "    print('We did it!')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "09728c0c-1d06-4449-8238-1879a010d33a",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "We did it!\n"
+     ]
+    }
+   ],
+   "source": [
+    "first_func()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "577cc1f1-be22-4f71-b9c4-e6fb3b3fcb8c",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def number_squared(number):\n",
+    "    print(number**2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "28873bb5-7270-496f-933c-17d9a3434e6c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "25\n"
+     ]
+    }
+   ],
+   "source": [
+    "number_squared(5)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "37deb791-27ba-48ff-a127-b1943a84a7d8",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def number_squared_cust(number,power):\n",
+    "    print(number**power)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "bb8a3ee3-b518-4cbe-a1ab-08d96333fee7",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "125\n"
+     ]
+    }
+   ],
+   "source": [
+    "number_squared_cust(5,3)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "74110813-bac2-4c91-8f11-4e44d983df9e",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#Arbitary arguments = Unknown arguments (*args)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "533af66b-9aec-4eff-aa53-32944f259b48",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "args_tuple= (5,6,1,2,8)\n",
+    "def number_args(*number):\n",
+    "    print(number[0]*number[1])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "id": "33b247d7-38c1-4511-b9db-0c3b76253a54",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "30\n"
+     ]
+    }
+   ],
+   "source": [
+    "number_args(*args_tuple)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "c919cbad-55ea-487b-95f8-c7d3138d5e79",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "46f89538-5a99-4959-964e-36b6a7fe9f18",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#Keyword Argument\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "id": "47ca3145-e19a-4660-a82e-cda09b021455",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def number_squared_cust(number,power):\n",
+    "    print(number**power)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "id": "e39bea44-d61c-4aad-b9d6-849f490a5cf0",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "243\n"
+     ]
+    }
+   ],
+   "source": [
+    "number_squared_cust(power = 5, number = 3)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "1322c27b-9a0d-45c5-b2ed-bb58dc31d216",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#Keyword Arbitrary Function\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 43,
+   "id": "80b39ea1-e503-4f34-a206-5c3baeb63f9f",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def number_kwarg(**number):\n",
+    "    print('My number is: ' + number['int'], 'My other number is : ' + number['int2'], 'My last number is : ' + number['int3'])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 46,
+   "id": "6db3c2d4-e3a2-41ff-8fdb-29365d81c49c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "My number is: 2309 My other number is : 247 My last number is : 5\n"
+     ]
+    }
+   ],
+   "source": [
+    "number_kwarg(int = '2309', int2 = '247', int3 = '5')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "d5c32f59-adb1-46ea-8910-53dc12bf0d55",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "f0fcc52b-d28e-4ff0-ab5b-506abbb9176f",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "bee17df0-4420-4143-a7f5-cd58287a6894",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "c579f6ff-7e00-44e6-b3f3-af9348cd6e43",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "3b9f1edf-30a3-4a8c-860b-7a4e0699e49f",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "606796f5-d4a9-40f7-b26c-a135363a7079",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "32bff74d-664a-4198-a451-ac0f15f7c471",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "a0b2b190-89b5-46b2-8ad9-9d7f3b4afa42",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python [conda env:base] *",
+   "language": "python",
+   "name": "conda-base-py"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.13.5"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
